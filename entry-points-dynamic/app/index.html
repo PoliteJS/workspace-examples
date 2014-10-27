@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="PoliteJS Workspace Examples">
+		<meta name="keywords" content="spa, single page application, workspace, politejs">
+		<meta name="author" content="PoliteJS :: Marco Pegoraro @ThePeg">
+
+        <title>PoliteJS Workspace - Examples!</title>
+        
+        <link rel="stylesheet" href="!/css/bootstrap.css">
+        
+        <!--
+          This is an extreme optimisation which is suppored in Chrome and Firefox so far.
+          after the complete rendering of the page the listed resourced are pre-downloaded so
+          when the script requires a dynamic module it will be already available in browser cache.
+          -->
+        <link rel="prefetch" href="core/1.js">
+        <link rel="prefetch" href="core/2.js">
+        <link rel="prefetch" href="core/3.js">
+    </head>
+    <body>
+        
+        <div class="container" style="margin-top:20px">
+            <div class="page-header">
+                <h1>
+                    Worspace Examples!<small>- by PoliteJS</small>
+                </h1>
+                <p class="lead">
+                    Dynamic Single Page Application <small>(open Dev Tools and take a look at the Network panel!)</small>
+                </p>
+                <p>
+                    This is the optimised version of <i>Monolithic Single Page Application</i>.
+                </p>
+                <p>
+                    It uses KnockoutJS at the same way but the page loading performances are better because 
+                    <b>only the code that is involved in the very first rendering is required</b> at page download.
+                </p>
+                <blockquote>
+                    <p>
+                        the optimal entry point is loaded based on the url's hashtag
+                    </p>
+                </blockquote>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="well well-sm">
+                        <h4>Navigation Menu:</h4>
+                        <ul>
+                            <li><a href="#/">Page1</a></li>
+                            <li><a href="#/page2">Page2</a></li>
+                            <li><a href="#/page3">Page3</a></li>
+                        </ul>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">Showing Page:</h4>
+                            <p class="list-group-item-text" data-bind="text:page">...</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">Component Name:</h4>
+                            <p class="list-group-item-text" data-bind="text:pageCmp">...</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--
+                  Here we use a dynamic Component binding to render the page content
+                  -->
+                <div class="col-xs-8" data-bind="component:pageCmp"></div>
+            </div>
+        </div>
+        
+        
+        <script src="!/js/knockout-3.2.0.js"></script>
+        
+        <!--
+          The ID of this script matter!
+          
+          Workspace try to inject a script linking the name matching page entry point (index.html -> index.js)
+          
+          By placing a script with this ID we prevent this behavior and we take control of it.
+          -->
+        <script id="wks-app">
+            /**
+             * Dynamically load app's entry point based on the url's hashtag.
+             * (this is a simplicistic code, it's only an example man!)
+             */
+            (function() {
+                var app = document.createElement('script');
+                app.src = 'core/' + (window.location.hash.replace('#/', '').replace('#', '') || 'page1') + '.js';
+                document.body.appendChild(app);
+            })();
+        </script>
+        
+    </body>
+</html>
