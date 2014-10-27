@@ -1,6 +1,5 @@
-# <small>PoliteJS Workspace</small>
-# Dynamic Single Page App
-============================
+Dynamic Single Page App
+=======================
 
 This example show how to create a **dynamic entry point** web page application using KnockoutJS 
 Components as UI modules to give structure to the app.
