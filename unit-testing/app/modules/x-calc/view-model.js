@@ -3,7 +3,7 @@ var calc = require('calc');
 
 module.exports = {
     init: function() {
-        this.expression = ko.observable('22 * 10a');
+        this.expression = ko.observable('');
         this.hasError = ko.observable(false);
         
         this.isSubmitDisabled = ko.computed(function() {
