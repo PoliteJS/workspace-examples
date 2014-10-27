@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="PoliteJS Workspace Examples">
+		<meta name="keywords" content="spa, single page application, workspace, politejs">
+		<meta name="author" content="PoliteJS :: Marco Pegoraro @ThePeg">
+
+        <title>PoliteJS Workspace - Examples!</title>
+        
+        <link rel="stylesheet" href="!/css/bootstrap.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="page-header">
+                <h1>
+                    Worspace Examples!<small>- by PoliteJS</small>
+                </h1>
+                <p class="lead">
+                    Unit Testing Example
+                </p>
+                <p>
+                    In this app there are 2 <b>UI modules</b> which <em>talks</em> via <em>pub/sub</em> to a <b>domain module</b>
+                    which is responsible of <ins>literally doing the math</ins>.
+                </p>
+                <p>
+                    This domain module is shipped with some unit tests which secure it a 100% <b>code coverage</b>.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <x-calc></x-calc>
+                </div>
+                <div class="col-md-7">
+                    <x-history></x-history>
+                </div>
+            </div>
+        </div>
+        
+        <script src="!/js/knockout-3.2.0.js"></script>
+    </body>
+</html>

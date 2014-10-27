@@ -1,0 +1,18 @@
+<!-- ko if:hasItems -->
+<div class="page-header">
+    <h4>
+        <button class="btn btn-primary pull-right" data-bind="click:clear">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+        Expression History:
+    </h4>
+</div>
+<ul class="list-group" data-bind="foreach:items">
+    <li class="list-group-item" data-bind="css:{'list-group-item-danger':isError}">
+        <!-- ko if:isSuccess -->
+        <span class="badge" data-bind="text:result"></span>
+        <!-- /ko -->
+        <span data-bind="text:expression"></span>
+    </li>
+</ul>
+<!-- /ko -->

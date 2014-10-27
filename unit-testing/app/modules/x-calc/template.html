@@ -1,0 +1,11 @@
+<div class="page-header">
+    <h4>Expression Resolver:</h4>
+</div>
+<form role="form" data-bind="submit:calculate">
+    <div class="input-group" data-bind="css:{'has-error':hasError}">
+        <input type="text" class="form-control" name="expression" placeholder="write your expression here" data-bind="value:expression, valueUpdate:'keyup'">
+        <span class="input-group-btn">
+            <button type="submit" class="btn btn-primary" data-bind="attr:{disabled:isSubmitDisabled}">Calculate!</button>
+        </span>
+    </div>
+</form>
