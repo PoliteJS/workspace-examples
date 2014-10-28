@@ -4,9 +4,10 @@ Unit Testing Example
 This example produces some modules shipped with a full unit testing support.
 
     // quick start:
-    npm install && gulp
+    npm install && gulp 
     
     // to run tests
+    gulp init-tdd  // setup test suite, run only once!
     gulp test
     
 
