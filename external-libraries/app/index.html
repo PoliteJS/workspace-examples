@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="PoliteJS Workspace Examples">
+		<meta name="keywords" content="spa, single page application, workspace, politejs">
+		<meta name="author" content="PoliteJS :: Marco Pegoraro @ThePeg">
+
+        <title>PoliteJS Workspace - Examples!</title>
+        
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="page-header">
+                <h1>
+                    Worspace Examples!<small>by PoliteJS</small>
+                </h1>
+                <p class="lead">
+                    Requiring External Libraries
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>
+                        This examples uses jQuery and Twitter Bootstrap from <code>cdnjs.cloudfare.com</code>.
+                    </p>
+                    <blockquote>
+                        <p>
+                            Using <i>CDN</i> is a really good strategy to improve <b>page loading performances</b>!
+                        </p>
+                    </blockquote>
+                    <p>
+                        Then I want to use jQuery from my application entry point which is a <em>CommonJS</em> module,
+                        I don't want to access the global scope with <code>window.$</code>, instead I do prefer the
+                        more secure and standard way to <b>explicitly require all the module's dependencies</b> with 
+                        <code>var $ = require('jquery')</code>.
+                    </p>
+                    <blockquote>
+                        <p>
+                            Take a look at <code>webpack.config.js</code> for the configuration!
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CDN Libraries -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        
+    </body>
+</html>

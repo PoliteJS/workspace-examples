@@ -1,0 +1,40 @@
+{
+  "name": "external-libraries",
+  "version": "0.0.0",
+  "description": "Build Twitter Bootstrap LessCss sources",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "run": "gulp"
+  },
+  "keywords": [
+    "single page application",
+    "boilerplate",
+    "compiler",
+    "builder",
+    "jquery",
+    "jqm",
+    "jquery mobile"
+  ],
+  "author": {
+    "name": "Marco Pegoraro",
+    "url": "http://movableapp.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PoliteJS/workspace"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "devDependencies": {
+    "gulp": "^3.8.9",
+    "gulp-workspace": "0.0.x",
+    "run-sequence": "^1.0.1"
+  },
+  "dependencies": {
+    "jqb-ko-component": "0.0.0",
+    "jqb-router": "0.0.0"
+  }
+}
