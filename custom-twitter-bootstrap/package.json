@@ -1,7 +1,7 @@
 {
-  "name": "entry-point-dynamic",
+  "name": "custom-twitter-bootstrap",
   "version": "0.0.0",
-  "description": "Dynamic & Optimised Single Page Application - PoliteJS Workspace",
+  "description": "Build Twitter Bootstrap LessCss sources",
   "main": "Gulpfile.js",
   "scripts": {
     "run": "gulp"
