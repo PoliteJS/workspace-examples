@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="PoliteJS Workspace Examples">
+		<meta name="keywords" content="spa, single page application, workspace, politejs">
+		<meta name="author" content="PoliteJS :: Marco Pegoraro @ThePeg">
+
+        <title>PoliteJS Workspace - Examples!</title>
+        
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="page-header">
+                <h1>
+                    Worspace Examples!<small>- by PoliteJS</small>
+                </h1>
+                <p class="lead">
+                    Dev Server Integration
+                </p>
+                <p>
+                    This app loads a list of colors from a JSON end point exposed within the <b>development server</b>:
+                </p>
+                <ul>
+                    <li>
+                        <a href="http://localhost:8080/colors">http://localhost:8080/colors</a>
+                    </li>
+                    <li>
+                        <a href="http://localhost:8080/colors/1">http://localhost:8080/colors/1</a>
+                    </li>
+                </ul>
+                <p>
+                    We play a little bit with the <code>workspace.conf.js</code> in order to split out <code>/app</code>
+                    folder into <code>/app/client</code> and <code>/app/server</code> then we can set a js file
+                    to be included and executed within the develompend server.
+                </p>
+                <blockquote>
+                    <p class="lead">
+                        The <em>server entry point</em> is part of an <em>ExpressJS</em> application!
+                    </p>
+                </blockquote>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>Demo App:</h3>
+                </div>
+                <div class="col-xs-4">
+                    <ul id="colors-list"></ul>
+                </div>
+                <div class="col-xs-8">
+                    <div id="color-details" class="well">
+                        <p>
+                            click on a color...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
