@@ -9,4 +9,4 @@ this.init = function(page) {
 
 this.getViewModel = function() {
     return this.viewModel;
-}
+};

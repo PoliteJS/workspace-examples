@@ -7,7 +7,7 @@
 
 module.exports = function(expr) {
     try {
-        return (new Function('return ' + expr))();
+        return (new Function('return ' + expr))(); // jshint ignore:line
     } catch(e) {
         return false;
     }

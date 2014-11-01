@@ -18,9 +18,9 @@
           after the complete rendering of the page the listed resourced are pre-downloaded so
           when the script requires a dynamic module it will be already available in browser cache.
           -->
-        <link rel="prefetch" href="core/1.js">
-        <link rel="prefetch" href="core/2.js">
-        <link rel="prefetch" href="core/3.js">
+        <link rel="prefetch" href="1.js">
+        <link rel="prefetch" href="2.js">
+        <link rel="prefetch" href="3.js">
     </head>
     <body>
         
@@ -90,7 +90,7 @@
              */
             (function() {
                 var app = document.createElement('script');
-                app.src = 'core/' + (window.location.hash.replace('#/', '').replace('#', '') || 'page1') + '.js';
+                app.src = (window.location.hash.replace('#/', '').replace('#', '') || 'page1') + '.js';
                 document.body.appendChild(app);
             })();
         </script>

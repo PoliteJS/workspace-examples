@@ -28,4 +28,4 @@ function createHandler(vm) {
             isSuccess: result !== undefined
         });
     };
-};
+}

@@ -24,7 +24,7 @@ describe('calc', function() {
     
     it('should fail an invalid expression', function() {
         calc.runExpression('a + b', function(result) {
-            expect(result).to.be.false;
+            expect(result).to.be(false);
         });
     });
     

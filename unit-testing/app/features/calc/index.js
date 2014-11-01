@@ -31,7 +31,9 @@ exports.init = function() {
 exports.runExpression = function(expr, callback) {
     var res = runner(expr);
     channel.publish(expr, res);
-    (typeof callback === 'function') && callback(res);
+    if (typeof callback === 'function') {
+        callback(res);
+    }
 };
 
 exports.on = channel.on;
