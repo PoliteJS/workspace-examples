@@ -8,4 +8,5 @@ require('x-page2');
 var app = require('app');
 app.init('page2');
 
+/* global ko: false */
 ko.applyBindings(app.getViewModel());

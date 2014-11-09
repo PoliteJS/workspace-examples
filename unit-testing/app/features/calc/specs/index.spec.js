@@ -16,15 +16,17 @@ describe('calc', function() {
         calc.init();
     });
     
-    it('should run a correct expression', function() {
+    it('should run a correct expression', function(done) {
         calc.runExpression('1 + 1', function(result) {
             expect(result).to.equal(2);
+            done();
         });
     });
     
-    it('should fail an invalid expression', function() {
+    it('should fail an invalid expression', function(done) {
         calc.runExpression('a + b', function(result) {
-            expect(result).to.be(false);
+            expect(result).to.be.false;
+            done();
         });
     });
     

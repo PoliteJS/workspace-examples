@@ -16,6 +16,8 @@
  * 
  */
 
+var ko = require('ko');
+
 // Knockout Components (for pages contents)
 require('x-calc');
 require('x-history');

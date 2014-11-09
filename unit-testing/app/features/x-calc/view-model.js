@@ -1,4 +1,6 @@
 
+var ko = require('ko');
+
 var calc = require('calc');
 
 module.exports = {

@@ -8,4 +8,5 @@ require('x-page3');
 var app = require('app');
 app.init('page3');
 
+/* global ko: false */
 ko.applyBindings(app.getViewModel());

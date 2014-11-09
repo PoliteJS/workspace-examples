@@ -6,6 +6,8 @@
  * (I can push it to become a jqb-pegasus module)
  */
 
+// jshint ignore: start
+
 // a   url (naming it a, beacause it will be reused to store callbacks)
 // xhr placeholder to avoid using var, not to be used
 function pegasus(a, xhr) {

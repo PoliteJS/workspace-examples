@@ -9,6 +9,9 @@
 
 exports.dev = function() {
     return {
+        externals: {
+            ko: 'ko'
+        },
         output: {
             
             // exports each application entry points as universal modules

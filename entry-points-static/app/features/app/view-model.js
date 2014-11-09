@@ -1,3 +1,5 @@
+/* global ko: false */
+
 module.exports = App;
 
 function App(pageName) {
