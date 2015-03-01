@@ -19,7 +19,6 @@ echo "";
 echo "";
 
 cd custom-twitter-bootstrap
-npm install
 gulp build
 cd ..
 clear
@@ -33,7 +32,6 @@ echo "";
 echo "";
 
 cd dev-server
-npm install
 gulp build
 cd ..
 clear
@@ -47,7 +45,6 @@ echo "";
 echo "";
 
 cd entry-points-dynamic
-npm install
 gulp build
 cd ..
 clear
@@ -61,7 +58,6 @@ echo "";
 echo "";
 
 cd entry-points-static
-npm install
 gulp build
 cd ..
 clear
@@ -75,7 +71,6 @@ echo "";
 echo "";
 
 cd external-libraries
-npm install
 gulp build
 cd ..
 clear
@@ -89,8 +84,6 @@ echo "";
 echo "";
 
 cd unit-testing
-npm install
-gulp init-tdd
 gulp build
 gulp test
 cd ..
@@ -105,8 +98,6 @@ echo "";
 echo "";
 
 cd unit-testing
-gulp init-tdd
-npm install
 gulp build
 gulp test
 cd ..
